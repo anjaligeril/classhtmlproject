@@ -100,7 +100,31 @@
 						padding-left:270px;
 						color:black;
 			           }
-			
+			#form {
+				  margin-left:250px;
+				  margin-top:50px;
+				  margin-right:250px;
+				  border: 5px solid #3a5705;
+				  box-sizing: border-box;
+				  border-radius: 10px;
+				  padding-left:50px;
+				  padding-right:50px;
+				  background-image:url("images/fortkochi2.jpg");
+				 height:700px;
+					
+			      }
+			#formhead {
+					font-family:"Georgia", serif;	
+					font-size:30px;
+					text-shadow: 2px 1px #3a5705;
+					margin-left:200px;
+					  }
+			#formbody {
+                       font-weight:bold;	
+                       }	
+            #submit1 {
+			         margin-left:250px;
+                    }			
 			</style>
 	</head>
 	<body>
@@ -136,7 +160,80 @@
 			<div id="body1">
 				<span id="discount"><b>Recommended Kerala Packages 30% Discount on all bookings for This Month <a href="#">Book Now</a></b></span>
 			</div>
-		  
+		    <div id="form">
+				<div id="formheading">
+				<h2 id="formhead"> Book Now</h2>
+				</div>
+				<br>
+				<div id="formbody">
+				<form method="get">
+					<label id="formname">NAME:&nbsp;&nbsp;&nbsp;</label><input type="text" name="username" required >
+					<label id="formemail">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EMAIL ID:&nbsp;&nbsp;</label><input type="EMAIL" name="useremail" required ><br><br>
+					<label id="formcountry">COUNTRY:&nbsp;&nbsp;&nbsp;</label><select name="country" required >
+															<option value="none">-----select-----</option>
+															<option value="usa">USA</option>
+															<option value="ca">CANADA</option>
+															<option value="au">AUSTRALIA</option>
+															<option value="in">INDIA</option>
+															</select>
+					<label id="formphone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PHONE NO:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="tel" name="tele" required pattern="[0-9]{10}"><br><br>	
+					<label id="formPACK">PACKAGE:&nbsp;&nbsp;&nbsp;</label><select name="PACK"  >
+															<option value="none">-------select---------</option>
+															<option value="1">GOD&#39;S OWN COUNTRY PACKAGE</option>
+															<option value="2">AYURVEDIC PACKAGE</option>
+															<option value="3">ADVENTURE PACKAGE</option>
+															<option value="4">MAGICAL KERALA PACKAGE</option>
+															<option value="5">ROMANTIC HONEYMOON PACKAGE </option>
+															<option value="CUST">CUSTOMIZATION</option></select><br><br>
+					<label id="formarrival">ARRIVAL :&nbsp;&nbsp;&nbsp;</label><input type="date" name="arrival" required >
+					<label id="formdeparture">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEPARTURE :&nbsp;&nbsp;&nbsp;</label><input type="date" name="departure" required ><br><br>
+					<label id="formadult">NO OF ADULT:</label><select name="ADULTS"  >
+															<option value="none">-select-</option>
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+															<option value="more">more</option>
+															</select>
+					<label id="formkids">NO OF KID:</label><select name="kids"  >
+															<option value="none">-select-</option>
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+															<option value="more">more</option>
+															</select>		
+					<label id="formroom">NO OF ROOM:</label><select name="rooms"  >
+															<option value="none">-select-</option>
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+															<option value="more">more</option>
+															</select>		<br><br>
+					<label id="add">ADDITIONAL INFORMATION:</label><br><br><textarea name="message" rows="20" cols="72"> </textarea><br><br>
+							 <input type="submit" id="submit1">										
+				</form>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
